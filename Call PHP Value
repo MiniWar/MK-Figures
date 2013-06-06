@@ -1,0 +1,18 @@
+// PHP Term
+
+
+		<a href="http://mk.miniwar.org/faction/<?php
+		$terms = get_the_terms( $post->ID , 'faction' );
+		foreach ( $terms as $term ) {
+		echo $term->slug;
+		}
+		?>
+		">
+
+		<?php
+		$terms = get_the_terms( $post->ID , 'faction' );
+		foreach ( $terms as $term ) {
+		echo $term->description;
+		}
+		?>
+		</a>
